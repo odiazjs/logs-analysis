@@ -11,4 +11,3 @@ print('---- MOST ERROR DATES ----')
 error_dates = news_service.get_most_error_dates()
 print(error_dates)
 
-
