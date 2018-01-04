@@ -4,6 +4,8 @@ import psycopg2
 # 1. new DbConnectionFactory('dbname')
 # 2. connect()
 # 3. executeQuery(query)
+
+
 class DbConnectionFactory():
     def __init__(self, dbname):
         self._dbname = dbname
