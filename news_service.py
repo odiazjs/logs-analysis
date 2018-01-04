@@ -8,7 +8,7 @@ class NewsService():
         """Return the most popular articles sorted by popularity."""
         query = '''SELECT title, count(*) as views
                     FROM articles a INNER JOIN log l 
-                    ON a.slug=substring(l.path, 10) 
+                    ON '/article/' || a.slug = l.path 
                     GROUP BY title 
                     ORDER BY views DESC 
                     LIMIT 3;'''
