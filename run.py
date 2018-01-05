@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import news_service
 
 news_service = news_service.NewsService()
